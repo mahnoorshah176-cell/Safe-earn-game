@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Safe Earn Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Safe Earn Game</h1>
+
+    <div id="auth">
+      <input id="username" placeholder="Username">
+      <input id="password" type="password" placeholder="Password">
+      <button id="register">Register</button>
+      <button id="login">Login</button>
+    </div>
+
+    <div id="app" style="display:none;">
+      <div class="top">
+        <div>Welcome <span id="userName"></span></div>
+        <div>Coins: <span id="coins">0</span></div>
+        <button id="logout">Logout</button>
+      </div>
+
+      <button id="dailyBtn">Claim Daily (20)</button>
+
+      <h3>Tasks</h3>
+      <ul id="tasks"></ul>
+
+      <h3>Leaderboard</h3>
+      <ol id="leader"></ol>
+    </div>
+
+    <div id="msg"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
